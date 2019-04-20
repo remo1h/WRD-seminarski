@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding: 0;
+}
+@font-face {
+    font-family: digits;
+    src: url(fonts/Digit.TTF);
+}
+@font-face{
+    font-family: robotoBold;
+    src:url(fonts/Roboto-Bold.ttf);
+}
+
+.calcul{
+    height: 530px;
+    width: 300px;
+    background-color: #5a5d70;
+    position: absolute;
+
+     
+}
+
+.display-content{
+    height: 150px;
+    border-top: solid black 20px;
+    background-color: #7aab8b;
+    text-align: right;
+   font-family: digits;
+   font-size: 20px;
+   
+}
+
+.pocetni{
+    font-family: digits;
+    font-size: 35px;
+    text-align: right;
+    overflow:hidden;
+    padding: 10px;
+    position: relative;
+    top:80px;
+    right: 10px;
+}
+
+table{
+    margin: 5px;
+}
+.delete{
+    background-image: url(images/delete.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+
+td{
+    width:50px;
+    height:50px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    font-family: robotoBold;
+    color:white;
+    font-size: 25px;
+    box-shadow: 2px 2px 15px #2a2a2f;
+}
+td:hover{
+    cursor: pointer;
+}
+.common1{
+    background-color: #2a2a2f;
+}
+.common2{
+    background-color:#8b8d9c;
+}
+

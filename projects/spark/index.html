@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spark</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta >
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <header>
+     <img src="img/logo.png" id="logo" alt="logo"> 
+     <ul id="lista">
+         <li> Home</li>
+         <li>About Us</li>
+         <li>Our Game</li>
+         <li>Contact</li>         
+         <span class="search"><input type="search" placeholder="Search">
+        </span><span class="searchikon"></span>
+         
+     </ul>
+    </header>
+
+    <div class="content">
+      <span class="desni"></span>
+      <article>
+          <p >A beutiful vacation photo <br/> awaits you</p>
+          <br/>
+          <p >As soon as u finish <br/>Spark School</p>
+          <br/>
+          <br/>
+          <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel dui ac dolor bibendum mattis a eget orci. Aenean ultrices bibendum interdum. Sed volutpat luctus eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel dui ac dolor bibendum mattis a eget orci. </p>          
+      </article>
+      <span class="lijevi"></span>
+
+     <span class="submit"><input type="submit" value="Apply now" ></span> <span class="apply"></span>
+      
+    </div>
+    <div class="about">
+        <h4 class="att"> Who attends Spark?</h4>
+        <div class="raketa">
+            <span class="rak"></span>
+            <p class="naslov1">Das Magnificients</p>
+            <p id="tekst1"> Lipsum dolor sit amet, consectetur adipiscing elit. Cras a magna nisl. Ut ultricies sit amet ipsum id pretium. Morbi metus dui, finibus a posuere vitae, viverra sit amet sem. Duis viverra facilisis dapibus. In lorem leo, bibendum ut nibh vel, consequat maximus nisl.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a magna nisl. Ut ultricies sit amet ipsum id pretium. Morbi metus dui, finibus a posuere vitae, viverra sit amet sem. Duis viverra facilisis dapibus. In lorem leo, bibendum ut nibh vel, consequat maximus nisl.
+            </p>
+        </div>
+        <div class="hemija">
+            <span class="hem"></span> <br/>
+            <p class="naslov2">Cool people</p>
+            <p id="tekst2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a magna nisl. Ut ultricies sit amet ipsum id pretium. Morbi metus dui, finibus a posuere vitae, viverra sit amet sem. Duis viverra facilisis dapibus. In lorem leo, bibendum ut nibh vel, consequat maximus nisl.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a magna nisl. Ut ultricies sit amet ipsum id pretium. Morbi metus dui, finibus a posuere vitae, viverra sit amet sem. Duis viverra facilisis dapibus. In lorem leo, bibendum ut nibh vel, consequat maximus nisl.
+       
+            </p>
+        </div>
+        <div class="meg"><span class="me"></span>
+            <p class="naslov3">Not Meg</p>
+           <p id="tekst3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a magna nisl. Ut ultricies sit amet ipsum id pretium. Morbi metus dui, finibus a posuere vitae, viverra sit amet sem. Duis viverra facilisis dapibus. In lorem leo, bibendum ut nibh vel, consequat maximus nisl.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a magna nisl. Ut ultricies sit amet ipsum id pretium. Morbi metus dui, finibus a posuere vitae, viverra sit amet sem. Duis viverra facilisis dapibus. In lorem leo, bibendum ut nibh vel, consequat maximus nisl.
+       </p>
+        </div>
+        
+    </div>
+
+    <div class="ourgame">
+    </div>
+
+    <div class="med"></div>
+
+    <div id="contact"> 
+        <span id="ikonaMape"></span>           
+    </div>
+    <script>
+        function myMap() {
+        /*var mapOptions = {
+            center: new google.maps.LatLng(43.3530744, 17.7915155),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.MAP
+        }
+        var map = new google.maps.Map(document.getElementById("contact"), mapOptions);
+        }
+        */
+  var myCenter = new google.maps.LatLng(43.353253,17.793747);
+  var mapCanvas = document.getElementById("contact");
+  var mapOptions = {center: myCenter, zoom: 15};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  
+  marker.setMap(map);
+
+} 
+        </script>
+    <div class="footer">
+        <span class="cpy"> <h5>Copyright<h5> <h5 id="drugi">SparkSchool</h5> </span>
+    <span class="twit"></span>
+    <span class="inst"></span>
+    <span class="fb"></span>
+    <span class="google"></span>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw10Qm5aLSLFEAas1uh19O1sAppysOCIE&callback=myMap"></script>
+</body>
+</html>

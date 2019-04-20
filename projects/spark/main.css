@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    background-color:  white;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 100;
+}
+ #logo{
+    position: absolute;
+    top:30%;
+    left:20%;
+}
+
+#lista{
+    position: absolute;
+    top:15%;
+    left:36%;
+}
+
+ #lista > li{
+    list-style-type: none;    
+    float: left;
+    padding: 20px;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+ #lista  li:hover{
+     border-bottom: 5px solid orange;
+     cursor: pointer;
+}
+ #lista  li:first-child{
+     border-bottom: 5px solid orange;
+}
+
+.search{
+    position: absolute;
+    top:20px;
+    margin-left: 10px;
+}
+.search input[type="search"]{
+    width: 180px;
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    background: gray;
+    opacity: 0.5;
+}
+
+.search input[type="search"]::placeholder{
+    color:white;
+    padding-left: 5px;
+}
+
+.searchikon{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top:23px;
+    margin-left:160px;
+    background: url("img/icons-20.png") 0 0;
+}
+
+p{
+    font-family: sans-serif;
+    color:white;
+    text-align: left;
+    font-size: 20px;
+}
+
+.submit{
+    width: 200px;
+    position: relative;
+    left: 305px;
+    top:80px;
+}
+.submit input[type="submit"]{
+padding: 8px;
+width: 200px;
+    border-radius: 15px;
+    border:none;
+    background-color: orange;
+    text-align: left;
+    cursor: pointer;
+}
+.apply{
+    height: 20px;
+    width: 20px;
+    background: url("img/icons-20.png") 0 -20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:485px;
+    left:480px;
+}
+.att
+{
+    font-size: 23px;
+    left:300px;
+    position: relative;
+    top:25px;
+    text-align: left;
+    font-weight: 500;
+    font-family: Arial;
+    color: gray;
+    border-bottom: 2px dotted;
+    padding: 30px;
+    width: 900px;
+}
+
+article{
+    height: 400px;
+    width: 300px;
+    position: relative;
+    top:10%;
+    left:20%;
+}
+.content{
+  position: absolute;
+  top:79px;
+  width: 100%;
+  height:580px;
+  background-image: url("img/poster.jpg");
+background-size: 100%;
+}
+
+.desni,.lijevi{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top:38%;
+}
+
+
+.lijevi{
+    background: url("img/icons-100.png") 0 0;
+   
+}
+
+.desni{
+    background: url("img/icons-100.png") 0 -100px;
+     left:1400px; 
+}
+.about{
+    position: absolute;
+    top:655px;
+    width: 100%;
+    height:550px;
+}
+
+.ourgame,#contact{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+}
+
+.ourgame{
+    top:1205px;
+    background-image: url("img/paralax.jpg");
+    background-position-y: -1300px;
+}
+#contact{
+    top:1805px;
+}
+
+.raketa,.hemija,.meg{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top:130px;
+    
+}
+
+.raketa{
+    left:300px;
+}
+.hemija{
+    left:660px;
+}
+.meg{
+    left:1020px;    
+}
+.naslov1,.naslov2,.naslov3{
+    font-family: Arial;
+    font-size: 23px;
+    position: absolute;
+    top:80px;
+    color: black;   
+}
+
+#tekst1,#tekst2,#tekst3{
+    position: absolute;
+    color: black;
+    font-size: 16px;
+    top:120px;
+    text-align: left;
+}
+.footer
+{
+    position: absolute;
+    top:2405px;
+    width: 100%;
+    height:70px;
+}
+
+.rak,.hem,.me{
+    position: absolute;
+    height: 80px;
+    width:80px;
+}
+
+.rak{
+    background: url("img/icons-80.png") 0 0;
+}
+.hem{
+    background: url("img/icons-80.png") 0 -80px;
+}
+.me{
+    background: url("img/icons-80.png") 0 80px;
+}
+
+#ikonaMape{
+    position: relative;
+    height: 64px;
+    width: 64px;
+    top:10%;
+    background-image: url("img/icon-map.png");
+}
+
+.twit, .inst, .fb, .google{
+    position: absolute;
+     height: 40px;
+     width: 40px;
+    top:20px;
+    }
+
+.twit{
+    background: url("img/icons-40.png") 0 0;
+    margin-left:1100px;
+}
+.inst{
+    background: url("img/icons-40.png") 0 -40px;
+    margin-left:1140px;
+    
+}
+
+.fb{
+    background: url("img/icons-40.png") 0 -80px;
+    margin-left:1180px;
+    
+}
+
+.google{
+    background: url("img/icons-40.png") 0 -120px;
+    margin-left:1220px;
+    
+}
+.cpy{
+    position: absolute;
+   top:30px;
+   margin-left: 30%;
+}
+.cpy h5{
+    display: inline;
+    color:gray;
+    font-weight: 550;
+}
+
+.cpy #drugi{
+   color:yellow;
+}
+
+.med
+{
+    position: absolute;
+    height: 250px;
+    width: 1200px;
+    background: orange;
+    top:1700px;
+    left: 180px;
+}

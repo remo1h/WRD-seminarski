@@ -1,0 +1,292 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: myFont;
+}
+@font-face{
+  font-family: myFont;
+  src:url(fonts/ComingSoon-Regular.ttf);
+}
+
+.background-images{
+  height: 100vh;
+  width: 98.9vw;
+  background-image: url(img/background-home.jpg);
+  background-attachment: fixed;
+ background-size: cover;
+}
+#pozicija{
+  margin: 15px 15px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+nav{
+  height: 60px;
+  width: 100%;
+  background-color: #d56d4a9e;
+   position: fixed;
+   transition: 1s;
+   transition-timing-function: ease-in-out;
+   z-index: 999999;
+}
+
+nav ul {
+  background-color: #d56d4a82;
+  width: 207px;
+  height: 0px;
+  overflow: hidden;
+  transition: 1s;
+  padding: 0px;
+  margin-top:-2px;
+  text-align: center;
+  transition-timing-function: ease-in;
+
+
+}
+footer{
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  width: 98.9vw;
+  background-color:black;
+  color: white;
+
+}
+nav li{
+  color:white;
+  list-style-type: none;
+  font-size: 25px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+nav li:hover{
+  background-color: #eff1e6;
+  color: #2c2c36;
+  cursor: pointer;
+}
+
+header{
+  text-align: center;
+  position: absolute;
+}
+.text1, .text2{
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 50%;
+  margin-left: 25%;
+  background-color: #2c2c36a3;
+}
+
+.text1{
+  margin-top: 15%;
+  font-size: 70px;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+  animation: text 3s 1;
+}
+
+.text2{
+  font-size: 30px;
+  color: white;
+  animation:text1 3s 1;
+    letter-spacing: 10px;
+}
+
+
+@keyframes text{
+  0%{
+    color:black;
+  }
+  40%{
+    letter-spacing:20px;
+  }
+  85%{
+    letter-spacing: 10px;
+  }
+}
+
+@keyframes text1{
+  0%{
+    opacity: 0;
+    margin-bottom: -40px;
+  }
+  40%{
+    opacity: 0.5;
+    margin-bottom: -20px;
+    letter-spacing: 30px;
+  }
+
+  70%{
+    opacity: 1;
+    margin-top: -20px;
+    letter-spacing: 30px;
+  }
+}
+
+#contact, #about, #gallery,#project{  
+  width: 98.9vw;
+
+}
+
+#project article section{
+  padding-bottom: 20px;
+  width: auto;
+  text-align: center;
+  margin: auto;
+  
+}
+#contact {
+  background: url(img/image-contact.jpg);
+  padding-top: 60px;
+}
+
+#about #info{
+  position: absolute;
+  left: 37%;
+  top: 8%;
+  width: 60%;
+}
+
+#about #info i{
+  margin-right: 15%;
+  color: white;
+}
+#map{
+  width: 98.9vw;
+   height: 50vh; 
+   background: black;
+}
+
+
+#label-contact{
+  background-color:#1d2d4776;
+  width: 400px;
+  margin-left: 0;
+  position: absolute;
+  left: 36%;
+  margin-top:0.5%;
+  color:wheat;
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+
+}
+
+#label-contact a i{
+  color:white;
+  margin-top: 2%;
+  font-size:50px;
+  margin-right: 20px;
+}
+
+#about{
+  background: url(img/about.jpg);
+  padding-top: 65px;
+}
+
+#project{
+  background: url(img/background-home.jpg);
+  padding-top: 65px;
+
+}
+
+#calculator{
+  margin:4% auto;
+}
+video{
+  margin:auto;
+  
+}
+@media screen and (max-width: 800px) {
+  #home, #gallery, #contact{
+    width: 100vw;
+    height: 100vh;
+  }
+  #project, #about{
+    width: 100vw;
+    height: auto;
+  }
+  #label-contact{
+    margin-top:5%;  
+    left:20%;
+       width: 250px;
+    font-size: 15px;
+
+  }
+  #label-contact h2{
+    font-size: 23px;  
+  }
+
+  #label-contact a i{
+    font-size: 40px;
+  }
+  
+  footer{
+    width: 100vw;
+  }
+  #map{ 
+    width: 100vw;
+  }
+  .text1 {
+  margin-top:50%;
+  font-size:30px;
+  width: 50vw;
+  animation: none;
+     /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .text2{
+    font-size: 20px;
+    animation: none;
+  }
+}
+#about article{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#about article section{
+  margin: auto;
+  width: 600px;
+  margin-bottom: 40px;
+}
+
+
+#gallery{
+  background-image: url(img/gallerybg.jpg);
+} 
+
+
+.prva, .druga{
+  position: absolute;
+  left:21.5%;
+  margin-top: 55px;
+  clip: rect(0px,700px,673px,145px);
+
+}
+
+.desni, .lijevi{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+.desni{
+  background: url(img/navigation.png);
+  
+  top:300px;
+  background-color: rgba(255, 255, 255, 0.34);
+  border-radius: 30%;
+  margin-left: 5px;
+}
+
+.lijevi{
+  background: url(img/navigation.png) 0 100px;
+  background-color: rgba(255, 255, 255, 0.306);
+  top: 300px;
+  border-radius: 30%;
+  margin-left: 29.5%;
+}
